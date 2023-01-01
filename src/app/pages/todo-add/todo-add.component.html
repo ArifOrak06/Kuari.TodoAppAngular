@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h3>Yapılacak İş Ekle</h3>
+            <hr>
+           
+
+                <form [formGroup]="todoForm" (ngSubmit)="addTodo()" class="form-group">
+                    <div class="mt-3">
+                        <label for="content" class="form-label">İçerik Bilgisi</label><br>
+                        <textarea class="form-control" name="content"  formControlName="content" cols="30" rows="10"></textarea>
+                    </div>
+                    <button class="btn btn-sm btn-success">Ekle</button>
+                </form>
+
+        </div>
+    </div>
+</div>
+<p>todo-add works!</p>
